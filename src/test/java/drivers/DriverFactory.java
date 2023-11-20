@@ -34,7 +34,7 @@ public class DriverFactory {
     public static AndroidDriver getAndroidDriver() {
         if (androidDriversThreadLocal.get() == null) {
             UiAutomator2Options options = new UiAutomator2Options();
-            options.setDeviceName("IvanPhone");
+            options.setDeviceName("Pixel 6 Pro");
             options.setChromedriverExecutable("/Users/yuanfanyou/Desktop/general-store/src/test/resources/chromedriver");
             options.setApp("/Users/yuanfanyou/Desktop/general-store/src/test/resources/General-Store.apk");
             try {
