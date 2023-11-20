@@ -20,6 +20,12 @@ public class LoginPage extends BasePage {
     @CacheLookup
     private WebElement femaleRadioBtn;
 
+    @FindBy(id = "com.androidsample.generalstore:id/radioMale")
+    @CacheLookup
+    private WebElement maleRadioBtn;
+
+
+
     @FindBy(id = "com.androidsample.generalstore:id/btnLetsShop")
     @CacheLookup
     private WebElement letsShopBtn;
@@ -37,6 +43,9 @@ public class LoginPage extends BasePage {
         femaleRadioBtn.click();
     }
 
+    public void clickMaleRadioBtn() {
+        maleRadioBtn.click();
+    }
     public void clickLetsShopBtn() {
         letsShopBtn.click();
     }
